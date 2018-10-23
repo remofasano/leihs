@@ -10,10 +10,10 @@ jobs:
       Status of this job is **used by github's "branch protection"**!
 
     depends_on:
-      deploy to demo was successful:
-        type: job
-        job_key: deploy-to-zhdk-leihs-demo
-        states: [passed]
+      # deploy to demo was successful:
+      #   type: job
+      #   job_key: deploy-to-zhdk-leihs-demo
+      #   states: [passed]
       deploy to test was successful:
         type: job
         job_key: deploy-to-zhdk-leihs-test
@@ -33,10 +33,10 @@ jobs:
         states: [passed]
 
     run_when:
-      deploy to demo was successful:
-        type: job
-        job_key: deploy-to-demo
-        states: [passed]
+      # deploy to demo was successful:
+      #   type: job
+      #   job_key: deploy-to-demo
+      #   states: [passed]
       deploy to test was successful:
         type: job
         job_key: deploy-to-test
