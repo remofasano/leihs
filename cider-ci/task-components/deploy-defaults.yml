@@ -12,7 +12,7 @@ context:
         submodules:
           include_match: ^.*$
       traits:
-        g2016: true
+        fastest-executors: true
 
       trial_attachments:
         server_log:
