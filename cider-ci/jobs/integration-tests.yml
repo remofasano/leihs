@@ -11,6 +11,7 @@ jobs:
     context:
       task_defaults:
         traits:
+          ci-g2018-03: yes # TEMP!
           vagrant: yes
           virtualbox: yes
 
